@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="UTF-8">
+	<title>Yeti DNS</title>
+	<link rel="icon" href=/assets/image/favicon.ico type="image/x-icon" />
+	<link rel="stylesheet" href="/assets/css/local.css" type="text/css" />
+</head>
+
+  <body>
+	<div id="wrap">
+
+  	  <div class="header">
+	<a id="aheader" href="index.html">Yeti DNS Project</a>
+	<h6>--A Live Root DNS Server System Testbed</h6>
+</div>
+
+ 
+
+	  <div id="sidebar">
+	<a href="index.html"><img id="sidebarlogo" src= "/assets/image/logo.png"></a>
+		<br />
+	    <a class="sidebarlink" href="/index.html">Introduction</a> <br />
+	    <a class="sidebarlink" href="/events.html">Events & Announcements</a> <br />
+		<a class="sidebarlink" href="/rootzone.html">Yeti Root Zone</a> <br />
+	    <a class="sidebarlink" href="/documents.html">Documents & Resource</a> <br />
+		<a class="sidebarlink" href="/operators.html">Operators and Participants </a> <br />
+	    <a class="sidebarlink" href="/statistics.html">Statistics</a> <br />
+		<a class="sidebarlink" href="/acknowledgement.html">Acknowledgement</a> <br />
+	<br />
+		<div class="contact"></div>	
+		<a class="sidebarlink" href="/blog.html">Yeti Blog</a> <br />
+	    <a class="sidebarlink" href="/join.html">Join us</a> <br />
+	    <a class="sidebarlink" href="/about.html">About us</a> <br />
+	    <a class="sidebarlink" href="/faq.html">FAQ</a> <br />
+	<br />
+    </div>
+
+ 	   <div id="main">
+ 	 	      <h1 id="yeti-root-zone">Yeti Root Zone</h1>
+
+<h2 id="yeti-root-hints">Yeti Root Hints</h2>
+
+<p>Operators who manage a DNS recursive resolver typically need to configure a “root hints file”. This file contains the names and IP addresses of the root zone, so the software can bootstrap the DNS resolution process. For many pieces of software, this list comes built into the software.</p>
+
+<p><strong>download</strong>:<a href="https://raw.githubusercontent.com/BII-Lab/Yeti-Project/master/domain/named.cache">Root Hints</a>    <a href="https://raw.githubusercontent.com/BII-Lab/Yeti-Project/master/domain/named.cache.asc">Signature</a></p>
+
+<h2 id="yeti-root-trust-anchors">Yeti Root Trust Anchors</h2>
+
+<p>The Root Trust Anchor, or Key Signing Key, is used by DNSSEC-enabled software to verify the contents of the DNS root zone is valid. It additionally enables a single chain of trust to DNSSEC-enabled top-level domains and beyond.</p>
+
+<p><strong>download</strong>:<a href="https://raw.githubusercontent.com/BII-Lab/Yeti-Project/master/domain/KSK.pub">Root Trust Anchors</a>    <a href="https://raw.githubusercontent.com/BII-Lab/Yeti-Project/master/domain/KSK.pub.asc">Signature</a></p>
+
+<h2 id="yeti-root-zone-file">Yeti Root Zone File</h2>
+
+<p>The complete root zone is available for download at the following locations. Ordinarily there should be no need to download this file on a regular basis, as the contents of the file are served via the DNS system itself.</p>
+
+<p><strong>download</strong>:<a href="http://dnsv6lab.net/zone/root.zone">Root Zone File</a>    <a href="http://dnsv6lab.net/zone/root.zone.asc">Signature</a></p>
+
+<p><strong>Note:</strong> althought Yeti DNS project publishes strictly IANA information for TLD data and metadata, it’s necessary for us to replace the apex NS RRset with Yeti authority name servers.</p>
+
+	  </div>
+
+    <div id="footer">
+	@2015 Yeti project Powered by <a href="http://jekyllrb.com/">www.jekyllrb.com</a>
+</div>
+	</div>
+
+  </body>
+
+</html>

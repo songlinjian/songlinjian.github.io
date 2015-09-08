@@ -2,7 +2,8 @@
 layout: post
 title:  "Yeti project problem statement"
 date:   2015-08-28 20:19:41
-categories: Yeti update
+author: Davey Song 
+categories: Yeti blog
 ---
 
 ## Problem Statement 

@@ -431,6 +431,8 @@ h4,h5,h6 {
 	margin-bottom: 10px
 }
 
+
+
 h1,.h1 {
 	font-size: 36px
 }
@@ -6354,4 +6356,11 @@ th.visible-print,td.visible-print {
 	th.hidden-print,td.hidden-print {
 		display: none!important
 	}
+
+}
+
+
+h6 {
+	margin: .8em 0 0 -1%;
+	line-height: 1.3;
 }
